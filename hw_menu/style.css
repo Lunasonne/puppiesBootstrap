@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 203, 203);
+}
+
+.menu {
+    background-color: rgb(112, 98, 98);
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    /*отменяет стандартные маркеры списка — такие как кружки, цифры или римские цифры.*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.menu li a:hover {
+    background-color: darkred;
+}
+  .small{
+   display: none; 
+}
+
+@media (min-width:1400px) {
+    .menu li a {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:768px) {
+    .menu li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .menu li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:575px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: start;
+    }
+
+    .menu li a {
+        font-size: 12px;
+        padding: 5px 15 px;
+        border-bottom: 2px solid white;
+    }
+    .big{
+        display: none;
+    }
+    .small{
+   display: block; 
+}
+}

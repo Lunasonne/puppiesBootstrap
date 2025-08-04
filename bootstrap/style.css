@@ -1,0 +1,8 @@
+
+.demo .row > .col, .demo .row > [class^="col-"]{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgb(208, 208, 205);
+         border: 1px solid gray; 
+    color: rgb(151, 151, 157);
+}
